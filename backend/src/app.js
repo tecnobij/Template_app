@@ -1,18 +1,17 @@
-// Import required modules
-require('dotenv').config(); // Load environment variables
+
+require('dotenv').config(); 
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
-// Route Setup
 const userRoute = require('./routes/user.router');
 const adminRoute = require('./routes/admin.routes');
 const uploadImages = require('./routes/image.routes');
 const uploadVideo = require('./routes/video.routes');
-const tagRoute = require('./routes/tag.routes'); // Corrected route file for tags
+const tagRoute = require('./routes/tag.routes'); 
 
-// Initialize the app
+
 const app = express();
 
 // Middleware setup
