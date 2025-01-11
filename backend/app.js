@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
-const userRoute = require('./routes/user.router');
-const adminRoute = require('./routes/admin.routes');
-const uploadImages = require('./routes/image.routes');
-const uploadVideo = require('./routes/video.routes');
-const tagRoute = require('./routes/tag.routes'); 
+const userRoute = require('./src/routes/user.router');
+const adminRoute = require('./src/routes/admin.routes');
+const uploadImages = require('./src/routes/image.routes');
+const uploadVideo = require('./src/routes/video.routes');
+const tagRoute = require('./src/routes/tag.routes'); 
 
 
 const app = express();
